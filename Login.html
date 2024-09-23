@@ -1,97 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
 
-    <script src="https://kit.fontawesome.com/8f1a35c4bd.js" crossorigin="anonymous"></script>
+        <script src="https://kit.fontawesome.com/8f1a35c4bd.js" crossorigin="anonymous"></script>
 
-    <style>
-        .content {max-width: 500px; margin: auto;}
-        #h
-        {
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
-            text-align: center;
-        }
+        <style>
+            .content {max-width: 500px; margin: auto;}
+            #h
+            {
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                text-align: center;
+            }
 
-        fieldset 
-        {
-            border: none;
-            padding: 0;
-            margin: 0;
-        }
-        body{
-            background-color: rgb(33, 33, 33);
-            color: white;
-            font-family: 'Poppins', sans-serif;
-        }
-    </style>
-
-</head>
-<body>
-    <div id="h">
-
-        <form name="UserLoginPage" id="LoginForm" method="get">
-            <h2>Login</h2>
+            fieldset 
+            {
+                border: none;
+                padding: 0;
+                margin: 0;
+            }
+            body{
+                background-color: rgb(33, 33, 33);
+                color: white;
+                font-family: 'Poppins', sans-serif;
+            }
             
-            <a href="Register.html">Dont have an account?</a>
+            .nav {
+                background-color: rgb(50, 45, 45); 
+                margin-top: 35px;
+                max-width: 300px;
+                margin: 0 auto;
+                border-radius: 15px;
+                text-align: center;
+            }
 
-            <br><br>
+            .nav a {
+                display: inline-block;
+                margin: 0 5px;
+                line-height: 40px; /* Adjust the line-height to move the icons down */
+            }
+        </style>
 
-            <input type="email" placeholder="Enter you email" name="NameOrEmail" required>
+    </head>
+    <body>
+        <div id="h">
+
+            <!--
+                On the final website (which i do want to make and publish later) i will not put a account page. 
+                This is simply to meet requirments and show that i know how to make this when its needed.
+            -->
+            <form name="UserLoginPage" id="LoginForm" method="get">
+                <h2>Login</h2>
+            
+                <a href="Register.html">Dont have an account?</a>
+
+                <br><br>
+
+                <label for="NameOrEmail">Name Or Email <b>(Required)</b></label>
+                <br>
+                <input type="email" placeholder="Enter you email" name="NameOrEmail" required>
     
+                <br><br>
+
+                <label for="password">Password <b>(Required)</b></label>
+                <br>
+                <input type="password" placeholder="Enter you password" name="password" required>
+
+                <br><br>
+
+                <input type="submit" value="Submit">
+            </form>
+
             <br><br>
+        </div>
 
-            <input type="password" placeholder="Enter you password" name="password" required>
-
-            <br><br>
-
-            <input type="submit" value="Submit">
-        </form>
-
-        <br><br>
-        <span style="display: inline-block; margin-right: 10px;">
-        <a href="Index.html"><i class="fa-solid fa-house fa-2xl" style="color: #fafafa;"></i></i></a>
-        </span>
-
-        <!-- -Gallery
-          <span style="display: inline-block; margin-right: 10px;">
-          <a href="links-and-images.html"><i class="fa-solid fa-image fa-2xl" style="color: #fafafa;"></i></a>
-          </span>
-          
-          Removed the gallery page as the images i have there are not related to the site but i still like the way it looks
-          so i dont want to delete it.
-
-        -->
+        <nav class="nav">
+            <!---Home-->
+            <a href="Index.html"><i class="fa-solid fa-house fa-2xl" style="color: #fafafa;"></i></i></a>
+               
+            <!---Games-->
+            <a href="Games.html"><i class="fa-solid fa-gamepad fa-2xl" style="color: #fafafa;"></i></a>
+      
+            <!---Information-->
+            <a href="Information.html"><i class="fa-solid fa-circle-info fa-2xl" style="color: #fafafa;"></i></a>
         
-        <!---Games-->
-        <span style="display: inline-block; margin-right: 10px;">
-        <a href="Games.html"><i class="fa-solid fa-gamepad fa-2xl" style="color: #fafafa;"></i></a>
-        </span>
-
-        <!---Information-->
-        <span style="display: inline-block; margin-right: 10px;">
-        <a href="Information.html"><i class="fa-solid fa-circle-info fa-2xl" style="color: #fafafa;"></i></a>
-        </span>
-
-        <!---Downloads-->
-        <span style="display: inline-block; margin-right: 10px;">
-        <a href="Downloads.html"><i class="fa-solid fa-download fa-2xl" style="color: #fafafa;"></i></a>
-        </span>
+            <!---Downloads-->
+            <a href="Downloads.html"><i class="fa-solid fa-download fa-2xl" style="color: #fafafa;"></i></a>
+                
+            <!---Login-->
+            <a href="Login.html"><i class="fa-solid fa-circle-user fa-2xl" style="color: #fafafa;"></i></a>
         
-        <!---Login-->
-        <span style="display: inline-block; margin-right: 10px;">
-        <a href="Login.html"><i class="fa-solid fa-circle-user fa-2xl" style="color: #fafafa;"></i></a>
-        </span>
-
-        <!---Exit-->
-        <span style="display: inline-block; margin-right: 10px;">
-        <a href="https://www.google.ca/"><i class="fa-solid fa-right-from-bracket fa-2xl" style="color: #fafafa;"></i></a>
-        </span>
-    
-    </div>
-</body>
+            <!---Exit-->
+            <a href="https://www.google.ca/"><i class="fa-solid fa-right-from-bracket fa-2xl" style="color: #fafafa;"></i></a>
+        </nav>
+    </body>
 </html>

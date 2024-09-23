@@ -1,151 +1,159 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Form</title>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Form</title>
 
-    <script src="https://kit.fontawesome.com/8f1a35c4bd.js" crossorigin="anonymous"></script>
+        <script src="https://kit.fontawesome.com/8f1a35c4bd.js" crossorigin="anonymous"></script>
 
-    <style>
-        .content {max-width: 500px; margin: auto;}
-        #h{
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
-            text-align: center;
-        }
-        body{
-            background-color: rgb(33, 33, 33);
-            color: white;
-            font-family: 'Poppins', sans-serif;
-        }
-        fieldset{
-            border: none;
-        }
-    </style>
+        <style>
+            .content {max-width: 500px; margin: auto;}
+            #h{
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                text-align: center;
+            }
+            body{
+                background-color: rgb(33, 33, 33);
+                color: white;
+                font-family: 'Poppins', sans-serif;
+            }
+            fieldset{
+                border: none;
+            }
 
-</head>
-<body>
-    <div id="h">
+            .nav {
+                background-color: rgb(50, 45, 45); 
+                margin-top: 35px;
+                max-width: 300px;
+                margin: 0 auto;
+                border-radius: 15px;
+                text-align: center;
+            }
 
-        <form name="UserRegisterPage" id="RegisterForm" method="get">
-            <fieldset >
-            <h1>Register</h1>    
+            .nav a {
+                display: inline-block;
+                margin: 0 5px;
+                line-height: 40px; /* Adjust the line-height to move the icons down */
+            }
+        </style>
 
-            <a href="Login.html">Already have an account?</a>
+    </head>
+    
+    <body>
+        <div id="h">
+
+            <form name="UserRegisterPage" id="RegisterForm" method="get">
+                <h1>Register</h1>    
+
+                <a href="Login.html">Already have an account?</a>
+            
+                <br><br>
+
+                <label for="Name">Name <b>(Required)</b></label>
+                <br>
+                <input type="text" placeholder="Enter you name" name="Name" required>
+    
+                <br><br>
+
+                <label for="email">Email <b>(Required)</b></label>
+                <br>
+                <input type="email" placeholder="Enter you email" name="email" required>
+    
+                <br><br>
+
+                <label for="password">Password <b>(Required)</b></label>
+                <br>
+                <input type="password" placeholder="Enter you password" name="password" required minlength="8">
+        
+                <br><br>
+        
+                <label for="DisplayName">Display Name <b>(Required)</b></label>
+                <br>
+                <input type="text" placeholder="Enter your display name" name="DisplayName" required maxlength="16">
+
+                <br><br>
+
+                <fieldset >
+                    <legend>Gender <b>(Required)</b></legend>
+                    <input type="radio" id="Male" name="Gender" required>
+                    <label for="Male">Male</label>
+    
+                    <input type="radio" id="Female" name="Gender" required>
+                    <label for="Female">Female</label>
+                </fieldset>
+
+                <label for="BirthDate">Birth Date <b>(Required)</b></label>
+                <br>
+                <input type="date" name="BirthDate" required>
+            
+                <br><br>
+
+                <label for="PhoneNumber">Phone Number (Optional)</label>
+                <br>
+                <input type="tel" placeholder="Enter your phone number"name="PhoneNumber">
+
+                <br><br>
+
+                <label for="Newsletter">Subscribe to our Newsletter</label>
+                <br>
+                <select name="Newsletter" id="NL">[
+                    <option value="all">Recieve all emails and updates</option>
+                    <option value="some">Recieve important updates</option>
+                    <option value="none">Recieve no information</option>
+                </select> 
+
+                <br><br>
+
+                <label for="ProfilePicture">Profile Picture (Optional)</label>
+                <br>
+                <input type="file" id="myfile" name="ProfilePicture">
+
+                <br><br>
+
+                <label for="bio">Bio (Optional)</label>
+
+                <br>
+
+                <textarea name="bio" id="bio" rows="8" cols="48"></textarea>
+
+                <br><br>
+
+                <iframe src="Files/TermsAndConditions.pdf#toolbar=0" width="50%" height="700px" style="border: none;"></iframe>
+
+                <br>
+
+                <label for="TermsAndConditions">Agree to Terms And Conditions <b>(Required)</b></label>
+                <input type="checkbox" name="TermsAndConditions" required>
+
+                <br><br>
+
+                <input type="submit" value="Submit">
+            </form>
             
             <br><br>
-
-            <input type="text" placeholder="Enter you name" name="Name" required>
-    
-            <br><br>
-
-            <input type="email" placeholder="Enter you email" name="email" required>
-    
-            <br><br>
-
-            <input type="password" placeholder="Enter you password" name="password" required minlength="8">
+        </div>
         
-            <br><br>
+        <nav class="nav">
+            <!---Home-->
+            <a href="Index.html"><i class="fa-solid fa-house fa-2xl" style="color: #fafafa;"></i></i></a>
+               
+            <!---Games-->
+            <a href="Games.html"><i class="fa-solid fa-gamepad fa-2xl" style="color: #fafafa;"></i></a>
+      
+            <!---Information-->
+            <a href="Information.html"><i class="fa-solid fa-circle-info fa-2xl" style="color: #fafafa;"></i></a>
         
-            <input type="text" placeholder="Enter your display name" name="DisplayName" required maxlength="16">
-
-            <h3>Gender</h3>
-
-            <input type="radio" id="Male" name="Gender" required>
-            <label for="Male">Male</label>
-
-            <input type="radio" id="Female" name="Gender" required>
-            <label for="Female">Female</label>
-
-            <br><br>
-
-            <label for="BirthDate"><b>Birth Date</b></label>
-            <input type="date" name="BirthDate" required>
-            
-            <br><br>
-
-            <input type="tel" placeholder="Enter your phone number"="PhoneNumber">
-
-            <br><br>
-
-            <label for="Newsletter">Subscribe to our Newsletter</label>
-            <select name="Newsletter" id="NL">[
-                <option value="all">Recieve all emails and updates</option>
-                <option value="some">Recieve important updates</option>
-                <option value="none">Recieve no information</option>
-            </select> 
-
-            <br><br>
-
-            <label for="ProfilePicture"><b>Profile Picture</b></label>
-            <input type="file" id="myfile" name="ProfilePicture">
-
-            <br><br>
-
-            <label for="bio">Bio</label>
-
-            <br>
-
-            <textarea name="bio     " id="bio" rows="8" cols="48"></textarea>
-
-            <br><br>
-
-            <iframe src="Files/TermsAndConditions.pdf#toolbar=0" width="50%" height="700px" style="border: none;"></iframe>
-
-            <br>
-
-            <label for="TermsAndConditions"><b>Agree to Terms And Conditions</b></label>
-            <input type="checkbox" name="TermsAndConditions" required>
-
-            <br><br>
-
-            <input type="submit" value="Submit">
-        </form>
-
-        <br><br>
-        <!---Home-->
-        <span style="display: inline-block; margin-right: 10px;">
-        <a href="Index.html"><i class="fa-solid fa-house fa-2xl" style="color: #fafafa;"></i></i></a>
-        </span>
-
-        <!-- -Gallery
-          <span style="display: inline-block; margin-right: 10px;">
-          <a href="links-and-images.html"><i class="fa-solid fa-image fa-2xl" style="color: #fafafa;"></i></a>
-          </span>
-          
-          Removed the gallery page as the images i have there are not related to the site but i still like the way it looks
-          so i dont want to delete it.
-
-        -->
+            <!---Downloads-->
+            <a href="Downloads.html"><i class="fa-solid fa-download fa-2xl" style="color: #fafafa;"></i></a>
+                
+            <!---Login-->
+            <a href="Login.html"><i class="fa-solid fa-circle-user fa-2xl" style="color: #fafafa;"></i></a>
         
-        <!---Games-->
-        <span style="display: inline-block; margin-right: 10px;">
-        <a href="Games.html"><i class="fa-solid fa-gamepad fa-2xl" style="color: #fafafa;"></i></a>
-        </span>
-
-        <!---Information-->
-        <span style="display: inline-block; margin-right: 10px;">
-        <a href="Information.html"><i class="fa-solid fa-circle-info fa-2xl" style="color: #fafafa;"></i></a>
-        </span>
-
-
-        <!---Downloads-->
-        <span style="display: inline-block; margin-right: 10px;">
-        <a href="Downloads.html"><i class="fa-solid fa-download fa-2xl" style="color: #fafafa;"></i></a>
-        </span>
-        
-        <!---Login-->
-        <span style="display: inline-block; margin-right: 10px;">
-        <a href="Login.html"><i class="fa-solid fa-circle-user fa-2xl" style="color: #fafafa;"></i></a>
-        </span>
-
-        <!---Exit-->
-        <span style="display: inline-block; margin-right: 10px;">
-        <a href="https://www.google.ca/"><i class="fa-solid fa-right-from-bracket fa-2xl" style="color: #fafafa;"></i></a>
-        </span>
-    
-    </div>
-</body>
+            <!---Exit-->
+            <a href="https://www.google.ca/"><i class="fa-solid fa-right-from-bracket fa-2xl" style="color: #fafafa;"></i></a>
+        </nav>
+    </body>
 </html>

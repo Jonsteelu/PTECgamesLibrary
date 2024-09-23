@@ -1,150 +1,113 @@
 <!DOCTYPE html>
 <html lang="en-us">
-<head>
-    <meta charset="utf-8"/>
-    <meta name="viewport" content="initial-scale=1.0, user-scalable=yes" />
-    <title>Our Games</title>
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="initial-scale=1.0, user-scalable=yes" />
+        <title>Our Games</title>
 
-    <script src="https://kit.fontawesome.com/8f1a35c4bd.js" crossorigin="anonymous"></script>
+        <script src="https://kit.fontawesome.com/8f1a35c4bd.js" crossorigin="anonymous"></script>
 
-    <style>
-        .content {max-width: 500px; margin: auto;}
-        #h{
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
-            text-align: center;
-        }
+        <style>
+            .content {max-width: 500px; margin: auto;}
+            #h{
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                text-align: center;
+            }
 
-        ul 
-        {
-            list-style-position: inside;
-            padding: 0;
-            text-align: center;
-        }
-        li 
-        {
-            display: inline-block;
-            margin: 0 10px;
-        }
-        body{
-            background-color: rgb(33, 33, 33);
-            color: white;
-            font-family: 'Poppins', sans-serif;
-        }
+            body{
+                background-color: rgb(33, 33, 33);
+                color: white;
+                font-family: 'Poppins', sans-serif;
+            }
 
-        .overlayRect {
-            position: fixed;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            margin-right: 800px;
-            margin-left: 100px;
-            margin-top: 0px;
-            margin-bottom: 100px;
-            width: 40%;
-            height: 50%;
-            background-color: rgb(50, 45, 45); 
-            z-index: 100; 
-            border-radius: 25px;
-        }
+            .game-description {
+                border: 5px solid white;
+                width: 640px;
+                height: 150px;
+                padding: 10px;
+                margin: 20px auto;
+            }
+            
+            .nav {
+                background-color: rgb(50, 45, 45); 
+                margin-top: 35px;
+                max-width: 300px;
+                margin: 0 auto;
+                border-radius: 15px;
+                text-align: center;
+            }
 
-        #AA{
-            font-size: px;
-            color: white;
-            margin-top: -315px;
-            margin-left: -315px;
-        }
+            .nav a {
+                display: inline-block;
+                margin: 0 5px;
+                line-height: 40px; /* Adjust the line-height to move the icons down */
+            }
+        </style>
 
-        .overlayRect2 {
-            position: fixed;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            margin-right: 100px;
-            margin-left: 875px;
-            margin-top: 0px;
-            margin-bottom: 100px;
-            width: 40%;
-            height: 50%;
-            background-color: rgb(50, 45, 45); 
-            z-index: 100; 
-            border-radius: 25px;
-        }
+    </head>
+    <body>
 
-        #AA2{
-            font-size: px;
-            color: white;
-            margin-top: -315px;
-            margin-right: -315px;
-        }
-    </style>
+        <div id="h">
 
-</head>
-<body>
-
-    <div id="h">
-        <header>
             <h2>Our Games</h2>
-        </header>
         
-        <div class="overlayRect">
-            <h1 id="AA">Arrow Assault</h1>
-            <div class="rectangle"></div>  
+            <!---
+                This is simply for the information that i want on the site.
+                Later on i plan to use more css and java to have a small square
+                overlay on which you click which will open it full screen in 
+                center of the page and contain the images and full discription.
+                Sort of like on a shopping site. It will contain these windows
+                for all games and to see full discription and all photos (one
+                of the photos is the thumbnail) you click on it.
+            -->
+
+            <h4>Arrow Assault</h4>
+            <p><b>Created by Jonathan</b></p>
+            <div class="game-description">
+                <p>
+                    In Arrow Assault you play as an archer who fights off waves of skeletons.
+                    <br>
+                    Use the <u>space bar</u> to shoot your bow, killing the skeletons. 
+                    <br>
+                    Collect the bones and skulls the skeletons drop to purchase items from the shop.
+                    <br>
+                    After purchasing <i>"arrow barage"</i> Use <u>E</u> to fire a barage of arrows quickly.
+                    <br>
+                    Try to survive as long as possible by shooting skeletons,
+                    <br>
+                    buying health, shields, arrow barages, and improving your reload speed. 
+                </p>
+            </div>
+
+            <img src="Images/ArrowShot.png" width="40%" height="40%" alt="Insert Alt Later">
+            <img src="Images/ShieldAndGame.png" width="40%" height="40%" alt="Insert Alt Later">
+            <br>
+            <img src="Images/Shop.png" width="40%" height="40%" alt="Insert Alt Later">
+
+            <br><br>
+
         </div>
 
-        <div class="overlayRect2">
-            <h1 id="AA2">Second Game</h1>
-            <div class="rectangle"></div>  
-        </div>
-
-        </br>
-
-        <!---Home-->
-        <span style="display: inline-block; margin-right: 10px; margin-top: 425px;">
-        <a href="Index.html"><i class="fa-solid fa-house fa-2xl" style="color: #fafafa;"></i></i></a>
-        </span>
-
-        <!-- -Gallery
-          <span style="display: inline-block; margin-right: 10px;">
-          <a href="links-and-images.html"><i class="fa-solid fa-image fa-2xl" style="color: #fafafa;"></i></a>
-          </span>
-          
-          Removed the gallery page as the images i have there are not related to the site but i still like the way it looks
-          so i dont want to delete it.
-
-        -->
+        <nav class="nav">
+            <!---Home-->
+            <a href="Index.html"><i class="fa-solid fa-house fa-2xl" style="color: #fafafa;"></i></i></a>
+               
+            <!---Games-->
+            <a href="Games.html"><i class="fa-solid fa-gamepad fa-2xl" style="color: #fafafa;"></i></a>
+      
+            <!---Information-->
+            <a href="Information.html"><i class="fa-solid fa-circle-info fa-2xl" style="color: #fafafa;"></i></a>
         
-        <!---Games-->
-        <span style="display: inline-block; margin-right: 10px;">
-        <a href="Games.html"><i class="fa-solid fa-gamepad fa-2xl" style="color: #fafafa;"></i></a>
-        </span>
-
-        <!---Information-->
-        <span style="display: inline-block; margin-right: 10px;">
-        <a href="Information.html"><i class="fa-solid fa-circle-info fa-2xl" style="color: #fafafa;"></i></a>
-        </span>
-
-        <!---Downloads-->
-        <span style="display: inline-block; margin-right: 10px;">
-        <a href="Downloads.html"><i class="fa-solid fa-download fa-2xl" style="color: #fafafa;"></i></a>
-        </span>
+            <!---Downloads-->
+            <a href="Downloads.html"><i class="fa-solid fa-download fa-2xl" style="color: #fafafa;"></i></a>
+                
+            <!---Login-->
+            <a href="Login.html"><i class="fa-solid fa-circle-user fa-2xl" style="color: #fafafa;"></i></a>
         
-        <!---Login-->
-        <span style="display: inline-block; margin-right: 10px;">
-        <a href="Login.html"><i class="fa-solid fa-circle-user fa-2xl" style="color: #fafafa;"></i></a>
-        </span>
-
-        <!---Exit-->
-        <span style="display: inline-block; margin-right: 10px;">
-        <a href="https://www.google.ca/"><i class="fa-solid fa-right-from-bracket fa-2xl" style="color: #fafafa;"></i></a>
-        </span>
-    
-    </div>
-
-    
-
-</body>
+            <!---Exit-->
+            <a href="https://www.google.ca/"><i class="fa-solid fa-right-from-bracket fa-2xl" style="color: #fafafa;"></i></a>
+        </nav>
+    </body>
 </html>
