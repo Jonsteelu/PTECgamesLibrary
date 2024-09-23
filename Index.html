@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en-us">
   <head>
@@ -18,89 +19,97 @@
     <style>
       .content {max-width: 500px; margin: auto;}
       #h{
-          display: block;
-          margin-left: auto;
-          margin-right: auto;
-          text-align: center;
+        display: block;
+        margin-left: auto;
+        margin-right: auto; 
+        text-align: center;
       }
       a, i{
-          margin-bottom: 25px;
+        margin-bottom: 25px;
       }
       body{
-            background-color: rgb(33, 33, 33);
-            color: white;
-            font-family: 'Poppins', sans-serif;
+        background-color: rgb(33, 33, 33);
+        color: white;
+        font-family: 'Poppins', sans-serif;
       }
-      
+      .nav {
+        background-color: rgb(50, 45, 45); 
+        margin-top: 35px;
+        max-width: 300px;
+        margin: 0 auto;
+        border-radius: 15px;
+        text-align: center;
+      }
+
+      .nav a {
+        display: inline-block;
+        margin: 0 5px;
+        line-height: 40px; /* Adjust the line-height to move the icons down */
+      }
     </style>
 
   </head>
   <body>
 
     <div id="h">
-    <h2>PTEC Games Library</h2>
-    <h4>About This Site</h4>
-    <p>This site is a library of games that PTEC students have created. Feel free to 
-      <a href="Downloads.html">download</a>
-      and try any of 
-      <a href="Games.html">our games</a></p>
-      <p>All games are made on the Unity game engine</p>
-      
-        <span style="display: inline-block; margin-right: 450px;">
+      <header>
+        <h2>PTEC Games Library</h2>
+        <h4>About This Site</h4>
+      </header>
+
+      <main>
+        <p>This site is a <i>library of games</i> that PTEC students have created. Feel free to 
+          <a href="Downloads.html">download</a>
+          and try any of 
+          <a href="Games.html">our games.</a>
+        </p>
+        <p>All games are made on the <b>Unity</b> game engine.</p>
+        <p>These games were made by <u>grade 9 PTEC students</u> in the 2023/2024 school year as their end of year final project.</p>
+      </main>
+
+      <figure>
+
+        <figcaption>
+          <span style="display: inline-block; margin-right: 450px;">
             <h4>Where we're located</h4>
-        </span>
-        <span style="display: inline-block;">
+            <a href="https://maps.app.goo.gl/QsASnZkGwdFiacrN9">Google Maps Link</a>
+          </span>
+
+          <span style="display: inline-block;">
             <h4>What we do</h4>
-        </span>
+            <a href="https://youtu.be/AJ6Mkx1KEns?si=AS8L4Q5eBg8dM3s">Unity Trailer Link</a>
+          </span>
+        </figcaption>
 
         </br>
         <!---Maps-->
         <iframe width="560" height="315" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2317.405031001538!2d-97.18694802440616!3d49.79935420924548!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x52ea75d46b3d8811%3A0x4633f0116d026344!2sPembina%20Trails%20Collegiate!5e0!3m2!1sen!2sca!4v1726070812126!5m2!1sen!2sca" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         <!---Youtube-->
-        <iframe class = "yt" width="560" height="315" src="https://www.youtube.com/embed/MA72tYKMNgM?si=XMUYUkxuHzbZF7ra" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-       
-          <br><br>
-
-          <!---Home-->
-          <span style="display: inline-block; margin-right: 10px;">
-          <a href="Index.html"><i class="fa-solid fa-house fa-2xl" style="color: #fafafa;"></i></i></a>
-          </span>
-  
-          <!-- -Gallery
-          <span style="display: inline-block; margin-right: 10px;">
-          <a href="links-and-images.html"><i class="fa-solid fa-image fa-2xl" style="color: #fafafa;"></i></a>
-          </span>
-          
-          Removed the gallery page as the images i have there are not related to the site but i still like the way it looks
-          so i dont want to delete it.
-
-          -->
-          
-          <!---Games-->
-          <span style="display: inline-block; margin-right: 10px;">
-          <a href="Games.html"><i class="fa-solid fa-gamepad fa-2xl" style="color: #fafafa;"></i></a>
-          </span>
-
-          <!---Information-->
-          <span style="display: inline-block; margin-right: 10px;">
-          <a href="Information.html"><i class="fa-solid fa-circle-info fa-2xl" style="color: #fafafa;"></i></a>
-          </span>
-  
-          <!---Downloads-->
-          <span style="display: inline-block; margin-right: 10px;">
-          <a href="Downloads.html"><i class="fa-solid fa-download fa-2xl" style="color: #fafafa;"></i></a>
-          </span>
-          
-          <!---Login-->
-          <span style="display: inline-block; margin-right: 10px;">
-          <a href="Login.html"><i class="fa-solid fa-circle-user fa-2xl" style="color: #fafafa;"></i></a>
-          </span>
-  
-          <!---Exit-->
-          <span style="display: inline-block; margin-right: 10px;">
-          <a href="https://www.google.ca/"><i class="fa-solid fa-right-from-bracket fa-2xl" style="color: #fafafa;"></i></a>
-          </span>
-      
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/AJ6Mkx1KEns?si=Ec9iOZTEBRwwoxuO" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </figure>
+      <br><br>
     </div>
+
+    <footer>
+      <nav class="nav">
+        <!---Home-->
+        <a href="Index.html"><i class="fa-solid fa-house fa-2xl" style="color: #fafafa;"></i></i></a>
+         
+        <!---Games-->
+        <a href="Games.html"><i class="fa-solid fa-gamepad fa-2xl" style="color: #fafafa;"></i></a>
+
+        <!---Information-->
+        <a href="Information.html"><i class="fa-solid fa-circle-info fa-2xl" style="color: #fafafa;"></i></a>
+  
+        <!---Downloads-->
+        <a href="Downloads.html"><i class="fa-solid fa-download fa-2xl" style="color: #fafafa;"></i></a>
+          
+        <!---Login-->
+        <a href="Login.html"><i class="fa-solid fa-circle-user fa-2xl" style="color: #fafafa;"></i></a>
+  
+        <!---Exit-->
+        <a href="https://www.google.ca/"><i class="fa-solid fa-right-from-bracket fa-2xl" style="color: #fafafa;"></i></a>
+      </nav>
+    </footer>
   </body>
 </html>
