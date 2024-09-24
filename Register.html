@@ -51,88 +51,92 @@
 
                     <a href="Login.html">Already have an account?</a>
                 </header>
-                
                 <br><br>
-
-                <label for="Name">Name <b>(Required)</b></label>
-                <br>
-                <input type="text" placeholder="Enter you name" name="Name" required>
-    
-                <br><br>
-
-                <label for="email">Email <b>(Required)</b></label>
-                <br>
-                <input type="email" placeholder="Enter you email" name="email" required>
-    
-                <br><br>
-
-                <label for="password">Password <b>(Required)</b></label>
-                <br>
-                <input type="password" placeholder="Enter you password" name="password" required minlength="8">
-        
-                <br><br>
-        
-                <label for="DisplayName">Display Name <b>(Required)</b></label>
-                <br>
-                <input type="text" placeholder="Enter your display name" name="DisplayName" required maxlength="16">
-
-                <br><br>
-
-                <fieldset >
-                    <legend>Gender <b>(Required)</b></legend>
-                    <input type="radio" id="Male" name="Gender" required>
-                    <label for="Male">Male</label>
-    
-                    <input type="radio" id="Female" name="Gender" required>
-                    <label for="Female">Female</label>
-                </fieldset>
-
-                <label for="BirthDate">Birth Date <b>(Required)</b></label>
-                <br>
-                <input type="date" name="BirthDate" required>
+                <main>
+                    <section>
+                        <label for="Name">Name <b>(Required)</b></label>
+                        <br>
+                        <input type="text" placeholder="Enter you name" name="Name" required>
             
-                <br><br>
-
-                <label for="PhoneNumber">Phone Number (Optional)</label>
-                <br>
-                <input type="tel" placeholder="Enter your phone number"name="PhoneNumber">
-
-                <br><br>
-
-                <label for="Newsletter">Subscribe to our Newsletter</label>
-                <br>
-                <select name="Newsletter" id="NL">[
-                    <option value="all">Recieve all emails and updates</option>
-                    <option value="some">Recieve important updates</option>
-                    <option value="none">Recieve no information</option>
-                </select> 
-
-                <br><br>
-
-                <label for="ProfilePicture">Profile Picture (Optional)</label>
-                <br>
-                <input type="file" id="myfile" name="ProfilePicture">
-
-                <br><br>
-
-                <label for="bio">Bio (Optional)</label>
-
-                <br>
-
-                <textarea name="bio" id="bio" rows="8" cols="48"></textarea>
-
-                <br><br>
-
-                <iframe src="Files/TermsAndConditions.pdf#toolbar=0" width="50%" height="700px" style="border: none;"></iframe>
-
-                <br>
-
-                <label for="TermsAndConditions">Agree to Terms And Conditions <b>(Required)</b></label>
-                <input type="checkbox" name="TermsAndConditions" required>
-
-                <br><br>
-
-                <input type="submit" value="Submit">
+                        <br><br>
+        
+                        <label for="email">Email <b>(Required)</b></label>
+                        <br>
+                        <input type="email" placeholder="Enter you email" name="email" required>
+            
+                        <br><br>
+        
+                        <label for="password">Password <b>(Required)</b></label>
+                        <br>
+                        <input type="password" placeholder="Enter you password" name="password" required minlength="8">
+                
+                        <br><br>
+                
+                        <label for="DisplayName">Display Name <b>(Required)</b></label>
+                        <br>
+                        <input type="text" placeholder="Enter your display name" name="DisplayName" required maxlength="16">
+        
+                        <br><br>
+        
+                        <fieldset >
+                            <legend>Gender <b>(Required)</b></legend>
+                            <input type="radio" id="Male" name="Gender" required>
+                            <label for="Male">Male</label>
+            
+                            <input type="radio" id="Female" name="Gender" required>
+                            <label for="Female">Female</label>
+                        </fieldset>
+        
+                        <label for="BirthDate">Birth Date <b>(Required)</b></label>
+                        <br>
+                        <input type="date" name="BirthDate" required>    
+                    </section>
+                    <br><br>
+                    <section>
+                        <label for="PhoneNumber">Phone Number (Optional)</label>
+                        <br>
+                        <input type="tel" placeholder="Enter your phone number"name="PhoneNumber">
+        
+                        <br><br>
+        
+                        <label for="Newsletter">Subscribe to our Newsletter</label>
+                        <br>
+                        <select name="Newsletter" id="NL">[
+                            <option value="all">Recieve all emails and updates</option>
+                            <option value="some">Recieve important updates</option>
+                            <option value="none">Recieve no information</option>
+                        </select> 
+        
+                        <br><br>
+        
+                        <label for="ProfilePicture">Profile Picture (Optional)</label>
+                        <br>
+                        <input type="file" id="myfile" name="ProfilePicture">
+        
+                        <br><br>
+        
+                        <label for="bio">Bio (Optional)</label>
+        
+                        <br>
+        
+                        <textarea name="bio" id="bio" rows="8" cols="48"></textarea>
+                    </section>
+                    <section>
+                        <br><br>
+                        <figure>
+                            <figcaption>Terms And Conditions PDF</figcaption>
+                            <iframe src="Files/TermsAndConditions.pdf#toolbar=0" width="50%" height="700px" style="border: none;"></iframe>
+                        </figure>
+                        
+                        <br>
+        
+                        <label for="TermsAndConditions">Agree to Terms And Conditions <b>(Required)</b></label>
+                        <input type="checkbox" name="TermsAndConditions" required>
+        
+                        <br><br>
+                    </section>
+                    <input type="submit" value="Submit">
+                </main>
             </form>
             
             <br><br>
