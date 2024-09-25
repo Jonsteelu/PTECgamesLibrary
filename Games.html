@@ -8,20 +8,20 @@
         <script src="https://kit.fontawesome.com/8f1a35c4bd.js" crossorigin="anonymous"></script>
 
         <style>
+            /*Style for the content of the page, such as centering content changing font and background color and margins*/
+            /*Also includes the css class for the border around the game description text */
             .content {max-width: 500px; margin: auto;}
-            #h{
+            #center{
                 display: block;
                 margin-left: auto;
                 margin-right: auto;
                 text-align: center;
             }
-
             body{
                 background-color: rgb(33, 33, 33);
                 color: white;
                 font-family: 'Poppins', sans-serif;
             }
-
             .game-description {
                 border: 5px solid white;
                 width: 640px;
@@ -29,7 +29,8 @@
                 padding: 10px;
                 margin: 20px auto;
             }
-            
+
+            /*Style for the navigation bar to make the rounded rectangle thing background around the link icons*/
             .nav {
                 background-color: rgb(50, 45, 45); 
                 margin-top: 35px;
@@ -38,17 +39,18 @@
                 border-radius: 15px;
                 text-align: center;
             }
-
             .nav a {
                 display: inline-block;
                 margin: 0 5px;
-                line-height: 40px; /* Adjust the line-height to move the icons down */
+                line-height: 40px;
             }
         </style>
 
     </head>
     <body>
-        <div id="h">
+        <!--Div for centering the text -->
+        <div id="center">
+            <!--Header for the page title -->
             <header>
                 <h2>Our Games</h2>
             </header>
@@ -62,13 +64,17 @@
                 for all games and to see full discription and all photos (one
                 of the photos is the thumbnail) you click on it.
             -->
-                
+
+            <!--Main contents of the page -->
             <main>
+                <!--Section containing one of the games. Later on i will add more games hence why i make this a section to add more sections for each game later. -->
                 <section>
                     <h4>Arrow Assault</h4>
                     <p><b>Created by Jonathan</b></p>
-            
+
+                    <!--Article for the actual description as it can be taking as a seperate part. -->
                     <article>
+                        <!--The css class for the game description for the border around it -->
                         <div class="game-description">
                             <p>
                                 In Arrow Assault you play as an archer who fights off waves of skeletons.
@@ -86,6 +92,7 @@
                         </div>
                     </article>
 
+                    <!--The figures for the images of the game  -->
                     <figure>
                         <figcaption>Pictures from the game</figcaption>
                         <img src="Images/ArrowShot.png" width="40%" height="40%" alt="Image of the character shooting an arrow towards a skeleton.">
@@ -97,7 +104,11 @@
             </main>
             <br><br>
         </div>
-
+        
+        <!--
+            Footer of the site contains only the navigation bar at this point. 
+            The navigation bar semantic tag is used with the nav css class to give it the background rectangle thing.   
+        -->
         <footer>
             <nav class="nav">
                 <!---Home-->
