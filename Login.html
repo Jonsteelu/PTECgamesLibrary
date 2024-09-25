@@ -8,27 +8,30 @@
         <script src="https://kit.fontawesome.com/8f1a35c4bd.js" crossorigin="anonymous"></script>
 
         <style>
+            /*Style for the content of the page, such as centering content changing font and background color and margins*/
             .content {max-width: 500px; margin: auto;}
-            #h
+            #center
             {
                 display: block;
                 margin-left: auto;
                 margin-right: auto;
                 text-align: center;
             }
+            body{
+                background-color: rgb(33, 33, 33);
+                color: white;
+                font-family: 'Poppins', sans-serif;
+            }
 
+            /*fieldset css class to remove the borders from the fieldsets for better visuals */
             fieldset 
             {
                 border: none;
                 padding: 0;
                 margin: 0;
             }
-            body{
-                background-color: rgb(33, 33, 33);
-                color: white;
-                font-family: 'Poppins', sans-serif;
-            }
-            
+
+            /*Style for the navigation bar to make the rounded rectangle thing background around the link icons*/
             .nav {
                 background-color: rgb(50, 45, 45); 
                 margin-top: 35px;
@@ -37,7 +40,6 @@
                 border-radius: 15px;
                 text-align: center;
             }
-
             .nav a {
                 display: inline-block;
                 margin: 0 5px;
@@ -47,33 +49,51 @@
 
     </head>
     <body>
-        <div id="h">
+        <!--Div for centering the text -->
+        <div id="center">
 
             <!--
                 On the final website (which i do want to make and publish later) i will not put a account page. 
                 This is simply to meet requirments and show that i know how to make this when its needed.
             -->
+
+            <!-- this is the login form and the register form is on a seperate page -->
             <form name="UserLoginPage" id="LoginForm" method="get">
+                <!--Header for the page title -->
                 <header>
                     <h2>Login</h2>
             
                     <a href="Register.html">Dont have an account?</a>    
                 </header>
                 <br><br>
+                <!--Main contents of the page -->
                 <main>
+                    <!--Section containing the options in the form for better organization. -->
                     <section>
-                        <label for="NameOrEmail">Name Or Email <b>(Required)</b></label>
+                        <!--Label for the NEmail input -->
+                        <label for="Email">Email <b>(Required)</b></label>
                         <br>
-                        <input type="email" placeholder="Enter you email" name="NameOrEmail" required>
+                        <!--
+                            Input of type email for the user to enter their email when loggin in. 
+                            It has placeholder "enter your email" so the user knows what to do and is set to required to sumbit the form. 
+                        -->
+                        <input type="email" placeholder="Enter your email" name="Email"  id="email" required>
         
                         <br><br>
-    
+                        
+                        <!--Label for the password input -->
                         <label for="password">Password <b>(Required)</b></label>
                         <br>
-                        <input type="password" placeholder="Enter you password" name="password" required>
+                        <!--
+                            Input of type password for the user to enter their password when loggin in, 
+                            this input type hides the text being entered and can be viewed or hidden. 
+                            It has placeholder "Enter your password" so the user knows what to do and is set to required to sumbit the form. 
+                        -->
+                        <input type="password" placeholder="Enter your password" name="password" id="password" required>
     
                         <br><br>
-    
+
+                        <!--Input of type submit which sumbits the form when you click on it -->
                         <input type="submit" value="Submit">
                     </section>
                 </main>
@@ -82,6 +102,10 @@
             <br><br>
         </div>
 
+        <!--
+            Footer of the site contains only the navigation bar at this point. 
+            The navigation bar semantic tag is used with the nav css class to give it the background rectangle thing.   
+        -->
         <footer>
             <nav class="nav">
                 <!---Home-->
