@@ -16,8 +16,9 @@
     <script src="https://kit.fontawesome.com/8f1a35c4bd.js" crossorigin="anonymous"></script>
   
     <style>
+      /*Style for the content of the page, such as centering content changing font and background color and margins*/
       .content {max-width: 500px; margin: auto;}
-      #h{
+      #center{
         display: block;
         margin-left: auto;
         margin-right: auto; 
@@ -31,6 +32,8 @@
         color: white;
         font-family: 'Poppins', sans-serif;
       }
+
+      /*Style for the navigation bar to make the rounded rectangle thing background around the link icons*/
       .nav {
         background-color: rgb(50, 45, 45); 
         margin-top: 35px;
@@ -39,23 +42,26 @@
         border-radius: 15px;
         text-align: center;
       }
-
       .nav a {
         display: inline-block;
         margin: 0 5px;
-        line-height: 40px; /* Adjust the line-height to move the icons down */
+        line-height: 40px;
       }
     </style>
 
   </head>
   <body>
 
-    <div id="h">
+    <!--Div for centering the text -->
+    <div id="center">
+      <!--Header for the page title -->
       <header>
         <h2>PTEC Games Library</h2>
       </header>
 
+      <!--Main contents of the page -->
       <main>
+        <!--General information about the page. In an article tag because it can be displayed individual and still make sense and is its own part-->
         <article>
           <h4>About This Site</h4>
           <p>This site is a <i>library of games</i> that PTEC students have created. Feel free to 
@@ -68,8 +74,10 @@
             game engine.</p>
           <p>These games were made by <u>grade 9 PTEC students</u> in the 2023/2024 school year as their end of year final project.</p>
         </article>
-      
+
+        <!--Figure semantic tags for the iframes of the map and video -->
         <figure>
+          <!--A fig caption to tell what the figure is about. Spans multiple lines as code for displaying text in a certain way is used in the figure caption -->
           <figcaption>
             <span style="display: inline-block; margin-right: 450px;">
               <h4>Where we're located</h4>
@@ -81,7 +89,8 @@
               <a href="https://youtu.be/AJ6Mkx1KEns?si=AS8L4Q5eBg8dM3s">Unity Trailer Link</a>
             </span>
           </figcaption>
-        
+
+          <!--Iframes with the actual map and youtube video -->
           </br>
           <!---Maps-->
           <iframe width="560" height="315" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2317.405031001538!2d-97.18694802440616!3d49.79935420924548!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x52ea75d46b3d8811%3A0x4633f0116d026344!2sPembina%20Trails%20Collegiate!5e0!3m2!1sen!2sca!4v1726070812126!5m2!1sen!2sca" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
@@ -92,6 +101,10 @@
       <br><br>
     </div>
 
+    <!--
+      Footer of the site contains only the navigation bar at this point. 
+      The navigation bar semantic tag is used with the nav css class to give it the background rectangle thing.   
+    -->
     <footer>
       <nav class="nav">
         <!---Home-->
