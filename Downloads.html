@@ -8,8 +8,9 @@
         <script src="https://kit.fontawesome.com/8f1a35c4bd.js" crossorigin="anonymous"></script>
 
         <style>
+            /*Style for the content of the page, such as centering content changing font and background color and margins*/
             .content {max-width: 500px; margin: auto;}
-            #h{
+            #center{
                 display: block;
                 margin-left: auto;
                 margin-right: auto;
@@ -28,7 +29,8 @@
                 color: white;
                 font-family: 'Poppins', sans-serif;
             }
-        
+
+            /*Style for the navigation bar to make the rounded rectangle thing background around the link icons*/
             .nav {
                 background-color: rgb(50, 45, 45); 
                 margin-top: 35px;
@@ -37,7 +39,6 @@
                 border-radius: 15px;
                 text-align: center;
             }
-
             .nav a {
                 display: inline-block;
                 margin: 0 5px;
@@ -47,15 +48,20 @@
     </head>
 
     <body>
-
-        <div id="h">
+        
+        <!--Div for centering the text -->
+        <div id="center">
+            <!--Header for the page title -->
             <header>
                 <h2>Downloads</h2>
             </header>
 
+            <!--Main contents of the page -->
             <main>
+                <!--Section for the entire table of downloads including the header. Used this as later i could add a second table later or something else. -->
                 <section>
                     <h4>Explore our games</h4>
+                    <!--Article for the actual download table as it can be displayd seperatly to the rest of the page just to show download options-->
                     <article>
                         <table class="centerTable">
                             <tr>
@@ -90,6 +96,10 @@
             </br>
         </div>
 
+        <!--
+            Footer of the site contains only the navigation bar at this point. 
+            The navigation bar semantic tag is used with the nav css class to give it the background rectangle thing.   
+        -->
         <footer>
             <nav class="nav">
                 <!---Home-->
