@@ -8,8 +8,9 @@
         <script src="https://kit.fontawesome.com/8f1a35c4bd.js" crossorigin="anonymous"></script>
 
         <style>
+            /*Style for the content of the page, such as centering content changing font and background color and margins*/
             .content {max-width: 500px; margin: auto;}
-            #h{
+            #center{
                 display: block;
                 margin-left: auto;
                 margin-right: auto;
@@ -20,10 +21,13 @@
                 color: white;
                 font-family: 'Poppins', sans-serif;
             }
+
+            /*fieldset css class to remove the borders from the fieldsets for better visuals */
             fieldset{
                 border: none;
             }
 
+            /*Style for the navigation bar to make the rounded rectangle thing background around the link icons*/
             .nav {
                 background-color: rgb(50, 45, 45); 
                 margin-top: 35px;
@@ -32,75 +36,134 @@
                 border-radius: 15px;
                 text-align: center;
             }
-
             .nav a {
                 display: inline-block;
                 margin: 0 5px;
-                line-height: 40px; /* Adjust the line-height to move the icons down */
+                line-height: 40px;
             }
         </style>
 
     </head>
     
     <body>
-        <div id="h">
+        <!--Div for centering the text -->
+        <div id="center">
 
+            <!--
+                On the final website (which i do want to make and publish later) i will not put a account page. 
+                This is simply to meet requirments and show that i know how to make this when its needed.
+            -->
+
+            <!-- this is the register form and the login form is on a seperate page -->
             <form name="UserRegisterPage" id="RegisterForm" method="get">
+                <!--Header for the page title -->
                 <header>
                     <h1>Register</h1>    
 
+                    <!--A link to the register page if the user doesnt have an account -->
                     <a href="Login.html">Already have an account?</a>
                 </header>
                 <br><br>
+                <!--Main contents of the page -->
                 <main>
+                    <!--Section containing the options in the form that are required for better organization. -->
                     <section>
+                        <!--Label for the Name input -->
                         <label for="Name">Name <b>(Required)</b></label>
                         <br>
-                        <input type="text" placeholder="Enter you name" name="Name" required>
+                        <!--
+                            Input of type text for the user to enter their name when registering. 
+                            It has placeholder "enter your name" so the user knows what to do and is set to required to sumbit the form. 
+                        -->
+                        <input type="text" placeholder="Enter you name" name="Name" id="Name" required>
             
                         <br><br>
-        
+
+                        <!--Label for the Email input -->
                         <label for="email">Email <b>(Required)</b></label>
                         <br>
-                        <input type="email" placeholder="Enter you email" name="email" required>
+                        <!--
+                            Input of type email for the user to enter their email when registering. 
+                            It has placeholder "enter your email" so the user knows what to do and is set to required to sumbit the form. 
+                        -->
+                        <input type="email" placeholder="Enter you email" name="email" id="email" required>
             
                         <br><br>
-        
+
+                        <!--Label for the password input -->
                         <label for="password">Password <b>(Required)</b></label>
                         <br>
-                        <input type="password" placeholder="Enter you password" name="password" required minlength="8">
+                        <!--
+                            Input of type password for the user to choose their password when registering, 
+                            this input type hides the text being entered and can be viewed or hidden. 
+                            It has placeholder "Enter your password" so the user knows what to do and is set to required to sumbit the form.
+                            Also has minimum length of 8 for the password for security purposes.
+                        -->
+                        <input type="password" placeholder="Enter you password" name="password" id="password" required minlength="8">
                 
                         <br><br>
-                
+
+                        <!--Label for the DisplayName input-->
+                        <!--
+                            (just so it is clear i knwo there isnt a type input display name or others that i use below 
+                            this is just to show it is a label for that input name regardless of type) 
+                        -->
                         <label for="DisplayName">Display Name <b>(Required)</b></label>
                         <br>
-                        <input type="text" placeholder="Enter your display name" name="DisplayName" required maxlength="16">
+                        <!--
+                            Input of type text for the user to enter their preffered display name when registering. 
+                            It has placeholder "enter your display name" so the user knows what to do and is set to required to sumbit the form.
+                            The maximum length is 16 characters for easier reading of the account name for other users.
+                        -->
+                        <input type="text" placeholder="Enter your display name" name="DisplayName" id="DisplayName" required maxlength="16">
         
                         <br><br>
-        
+
+                        <!--A fieldset for the input to select gender when registering.  -->
                         <fieldset >
+                            <!--A legend which acts as the label for the entire fieldset  -->
                             <legend>Gender <b>(Required)</b></legend>
+                            <!--Input of type radio option one for id=male with the name gender to link it to the second option in the fieldset.  -->
                             <input type="radio" id="Male" name="Gender" required>
+                            <!--Label for male option -->
                             <label for="Male">Male</label>
             
+                            <!--Input of type radio option one for id=female with the name gender to link it to the first option in the fieldset.  -->
                             <input type="radio" id="Female" name="Gender" required>
+                            <!--Label for female option -->
                             <label for="Female">Female</label>
+
+                            <!--This fieldset is set to required (Each radio input seperatly) when registering. -->
                         </fieldset>
-        
+
+                        <!--Label for the birthdate input -->
                         <label for="BirthDate">Birth Date <b>(Required)</b></label>
                         <br>
-                        <input type="date" name="BirthDate" required>    
+                        <!--Input of type date so the user can select the day month and year they were born. It is set to required when registering -->
+                        <input type="date" name="BirthDate" id="BirthDate" required>    
                     </section>
                     <br><br>
+                    <!--Section containing the options in the form that are optional for better organization. -->
                     <section>
+                        <!--Label for the PhoneNumber input -->
                         <label for="PhoneNumber">Phone Number (Optional)</label>
                         <br>
-                        <input type="tel" placeholder="Enter your phone number"name="PhoneNumber">
+                        <!--Input of type tel(telephone), with placeholder "Enter your phone number", it is optional. -->
+                        <input type="tel" placeholder="Enter your phone number" name="PhoneNumber" id="PhoneNumber">
         
                         <br><br>
-        
+
+                        <!--Label for the Newsletter input -->
                         <label for="Newsletter">Subscribe to our Newsletter</label>
                         <br>
+                        <!--
+                            Not an input but a select option with a drop down with three choices to 
+                                recieve all emails and update
+                                Recieve important updates
+                                recieve no information
+                            Option values corespond to this with all, some or none. 
+                            To submit the form this is not required but by default the value is set to all as it is the first option.
+                        -->
                         <select name="Newsletter" id="NL">[
                             <option value="all">Recieve all emails and updates</option>
                             <option value="some">Recieve important updates</option>
@@ -108,29 +171,41 @@
                         </select> 
         
                         <br><br>
-        
+
+                        <!--Label for the ProfilePicture input -->
                         <label for="ProfilePicture">Profile Picture (Optional)</label>
                         <br>
+                        <!--Input of type file so the user can upload a image as his profile picture. 
+                            I would assume this later needs javascript so any file type except png of jpg is not allowed for securit reasons.
+                            This is not required. 
+                        -->
                         <input type="file" id="myfile" name="ProfilePicture">
         
                         <br><br>
-        
+
+                        <!--Label for the Bio input -->
                         <label for="bio">Bio (Optional)</label>
         
                         <br>
-        
+                        <!--Input of type text area with 8 rows and 48 collumns for the user to write his bio of his profile. -->
                         <textarea name="bio" id="bio" rows="8" cols="48"></textarea>
                     </section>
+                    <!--Section containing the terms and conditions for better organization. -->
                     <section>
                         <br><br>
+                        <!--Figure containing the pdf of terms and conditions in an iframe with pdf tool bar disabled for better looks. -->
                         <figure>
+                            <!--Uses a figcaption instead of a label to discribe what this is -->
                             <figcaption>Terms And Conditions PDF</figcaption>
+                            <p><strong>DISCLAIMER!</strong> terms and conditions are entirely genereated by an AI language model and have no legal binding or purpose</p>
                             <iframe src="Files/TermsAndConditions.pdf#toolbar=0" width="50%" height="700px" style="border: none;"></iframe>
                         </figure>
                         
                         <br>
-        
+
+                        <!--Label for the TermsAndConditions input -->
                         <label for="TermsAndConditions">Agree to Terms And Conditions <b>(Required)</b></label>
+                        <!--Input of type checkbox so the user must click yes as it is required to agree to terms and conditions before using the site -->
                         <input type="checkbox" name="TermsAndConditions" required>
         
                         <br><br>
@@ -141,7 +216,11 @@
             
             <br><br>
         </div>
-        
+
+        <!--
+            Footer of the site contains only the navigation bar at this point. 
+            The navigation bar semantic tag is used with the nav css class to give it the background rectangle thing.   
+        -->
         <footer>
             <nav class="nav">
                 <!---Home-->
